@@ -11,17 +11,15 @@ const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (productId) => {
-    const index = mycart.findIndex(
-        (item) => item.id === productId
-      );
+    const index = mycart.findIndex((item) => item.itemId === productId);
 
-      let newList = [...mycart];
+    let newList = [...mycart];
 
-      if (index >= 0) {
-        newList.splice(index, 1);
-      }
+    if (index >= 0) {
+      newList.splice(index, 1);
+    }
 
-      setMycart(newList)
+    setMycart(newList);
   };
 
   const values = {

@@ -1,6 +1,7 @@
 "use client";
 import { clothing } from "@/app/DataDB";
-import React, { useState } from "react";
+import { CartContext } from "@/app/contexts/mycartContext";
+import React, { useContext, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
 function ProductDetailsPage({ params }) {
@@ -11,24 +12,22 @@ function ProductDetailsPage({ params }) {
 
   const item = clothing.filter((e) => e?.itemId === params?.productName);
 
-  function checkSize(){
+  const { mycart, addToCart, removeFromCart } = useContext(CartContext);
 
-     if(selectCustomSize===35){
-      setselectCustomSizeResult("Sm")
-     }
-     if(selectCustomSize===37){
-      setselectCustomSizeResult("Md")
-     }
-     if(selectCustomSize===39){
-      setselectCustomSizeResult("Lg")
-     }
-     if(selectCustomSize===41){
-      setselectCustomSizeResult("Xl")
-     }
-
-    
-   
-  };
+  function checkSize() {
+    if (selectCustomSize === 35) {
+      setselectCustomSizeResult("Sm");
+    }
+    if (selectCustomSize === 37) {
+      setselectCustomSizeResult("Md");
+    }
+    if (selectCustomSize === 39) {
+      setselectCustomSizeResult("Lg");
+    }
+    if (selectCustomSize === 41) {
+      setselectCustomSizeResult("Xl");
+    }
+  }
 
   return (
     <div className="flex flex-row items-start px-10 py-5 space-x-10">
@@ -47,12 +46,22 @@ function ProductDetailsPage({ params }) {
         </div>
 
         <div className="flex space-x-3 py-5">
-          <button className="bg-green-700 py-1 px-3 rounded-lg text-white">
-            Add to cart
-          </button>
-          <button className="bg-gray-400 py-1 px-3 rounded-lg text-white">
-            Add to wishlist
-          </button>
+          {mycart.findIndex((product) => product.itemId === item[0]?.itemId) ===
+          -1 ? (
+            <button
+              onClick={() => addToCart(item[0])}
+              className="bg-green-700 py-1 px-3 rounded-lg text-white "
+            >
+              Add to cart
+            </button>
+          ) : (
+            <button
+              className="bg-gray-400 py-1 px-3 rounded-lg text-white "
+              onClick={() => removeFromCart(item[0].itemId)}
+            >
+              Remove from cart
+            </button>
+          )}
         </div>
 
         <div className="flex space-x-3 pb-3 items-end ">
@@ -104,7 +113,7 @@ function ProductDetailsPage({ params }) {
                 />
                 <button
                   className="bg-green-500 px-3 text-white"
-                  onClick={()=>checkSize}
+                  onClick={() => checkSize}
                 >
                   Submit
                 </button>

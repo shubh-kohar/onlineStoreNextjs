@@ -1,19 +1,39 @@
-import React from 'react'
+"use client";
+import React, { useContext } from "react";
+import { CartContext } from "../contexts/mycartContext";
+import ItemCart from "../components/ItemCart";
 
 function MyCart() {
+  const { mycart } = useContext(CartContext);
   return (
-    <div className='flex items-start px-10 py-5 relative min-h-screen'>
-        {/* cart list */}
-        <div className="flex-col flex flex-1">
-            <h1>No item in the cart</h1>
-        </div>
+    <div className="flex items-start px-10 py-5 relative min-h-screen space-x-3">
+      {/* cart list */}
+      <div className="flex-col flex flex-1">
+        {mycart.map((item) => (
+          <ItemCart {...item} />
+        ))}
+      </div>
 
-        {/* Grand Total bar */}
-        <div className="flex-col flex w-1/3 border sticky top-16 min-h-[400px]">
-            <h1 className='p-2 bg-gray-200'>Grand Total</h1>
+      {/* Grand Total bar */}
+      <div className="flex-col flex w-1/3 border sticky top-16 ">
+        <h1 className="p-2 bg-gray-200">Grand Total</h1>
+
+        <div className="flex-col flex p-3">
+          <h1 className="flex flex-col h-full space-between">
+            <span>Total cost</span>
+            <span className="text-2xl font-bold">
+
+            ₹{mycart.reduce((total, item) => total + item.itemPrice, 0)}/-
+            </span>
+          </h1>
+
+          <button className="bg-green-700 py-1 px-3 rounded-lg text-white ">
+            Checkout now
+          </button>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default MyCart
+export default MyCart;

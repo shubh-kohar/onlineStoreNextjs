@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import CartProvider from './contexts/mycartContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -14,11 +15,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <CartProvider>
+
       <Header/>
         <main className='min-h-screen'>
         {children}
         </main>
         <Footer/>
+        </CartProvider>
         </body>
     </html>
   )

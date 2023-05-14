@@ -26,7 +26,7 @@ function MyCart() {
       {/* cart list */}
       <div className="flex-col flex flex-1">
         {mycart.map((item) => (
-          <ItemCart {...item} />
+          <ItemCart {...item} key={e.itemId} />
         ))}
       </div>
 

@@ -7,7 +7,7 @@ function ProductPage() {
     <div>
       <div className="grid grid-cols-5 gap-3 p-5">
         {clothing.map((e) => (
-          <Link href={`/product/${e.itemId}`} key={e.itemImage}>
+          <Link href={`/product/${e.itemId}`} key={e.itemId}>
             <div className="flex flex-col border max-w-md hover:scale-105 cursor-pointer">
               <img
                 src={e.itemImage}

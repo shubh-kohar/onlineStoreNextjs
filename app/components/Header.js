@@ -57,12 +57,10 @@ const Header = () => {
           </div>
         </Link>
 
-        <Link href={"/mywishlist"}>
-          <div className="flex items-center">
-            <AiOutlineHeart size={25} />
-            <h1>My wishlist</h1>
-          </div>
-        </Link>
+        <div className="flex items-center">
+          <AiOutlineHeart size={25} />
+          <h1>My wishlist</h1>
+        </div>
 
         <Link href="/login">
           <div className="flex items-center">

@@ -6,8 +6,8 @@ import { AiFillStar } from "react-icons/ai";
 
 function ProductDetailsPage({ params }) {
   const [selectSize, setSelectSize] = useState(0);
-  const [selectCustomSize, setSelectCustomSize] = useState(0);
-  const [selectCustomSizeResult, setselectCustomSizeResult] = useState("");
+  const [selectCustomSize, setSelectCustomSize] = useState();
+  const [sizeResult, setSizeResult] = useState("");
   const [openSizeBox, setOpenSizeBox] = useState(false);
 
   const item = clothing.filter((e) => e?.itemId === params?.productName);
@@ -15,17 +15,47 @@ function ProductDetailsPage({ params }) {
   const { mycart, addToCart, removeFromCart } = useContext(CartContext);
 
   function checkSize() {
-    if (selectCustomSize === 35) {
-      setselectCustomSizeResult("Sm");
+    if ((selectCustomSize) => 35 || selectCustomSize < 37) {
+      setSizeResult({
+        status: "ok",
+        size: "S",
+        shoulder: "16",
+        length: "26.5",
+        sleeve: "7",
+      });
     }
-    if (selectCustomSize === 37) {
-      setselectCustomSizeResult("Md");
+    if ((selectCustomSize) => 37 || selectCustomSize < 39) {
+      setSizeResult({
+        status: "ok",
+        size: "M",
+        shoulder: "16.5",
+        length: "27.5",
+        sleeve: "7.25",
+      });
     }
-    if (selectCustomSize === 39) {
-      setselectCustomSizeResult("Lg");
+    if ((selectCustomSize) => 39 || selectCustomSize < 41) {
+      setSizeResult({
+        status: "ok",
+        size: "L",
+        shoulder: "17.5",
+        length: "28.5",
+        sleeve: "7.5",
+      });
     }
-    if (selectCustomSize === 41) {
-      setselectCustomSizeResult("Xl");
+    if ((selectCustomSize) => 41 || selectCustomSize < 43) {
+      setSizeResult({
+        status: "ok",
+        size: "XL",
+        shoulder: "18.5",
+        length: "29.5",
+        sleeve: "8",
+      });
+    }
+
+    if (selectCustomSize < 35 || selectCustomSize >= 43) {
+      setSizeResult({
+        status: "Not Available",
+      });
     }
   }
 
@@ -97,7 +127,7 @@ function ProductDetailsPage({ params }) {
         </div>
         {/* trail size */}
         {openSizeBox && (
-          <div className="border w-full p-5 rounded-lg flex my-5 ">
+          <div className="border w-full p-5 rounded-lg flex my-5 space-x-4 ">
             <img
               src="https://rukminim1.flixcart.com/www/240/240/prod/images/sizechart/t_shirt-half_sleeve-men_s-round_neck-d3fa68ae.jpg?q=90"
               alt="size"
@@ -107,20 +137,36 @@ function ProductDetailsPage({ params }) {
               <div className="flex">
                 <input
                   type="number"
+                  value={selectCustomSize}
                   placeholder="36"
                   className="border p-1 flex-1"
-                  onChange={(e) => setSelectCustomSize(e.target.value)}
+                  onChange={(e) => setSelectCustomSize(Number(e.target.value))}
                 />
                 <button
                   className="bg-green-500 px-3 text-white"
-                  onClick={() => checkSize}
+                  onClick={checkSize}
                 >
                   Submit
                 </button>
               </div>
-              {selectCustomSize}
-
-              {selectCustomSizeResult}
+              {sizeResult.status === "ok" ? (
+                <table className="border">
+                  <tr>
+                    <th className="p-2">Size</th>
+                    <th className="p-2">Shoulder</th>
+                    <th className="p-2">Length</th>
+                    <th className="p-2">Sleeve</th>
+                  </tr>
+                  <tr className="text-center">
+                    <td className="p-2">{sizeResult.size}</td>
+                    <td className="p-2">{sizeResult.shoulder}</td>
+                    <td className="p-2">{sizeResult.length}</td>
+                    <td className="p-2">{sizeResult.sleeve}</td>
+                  </tr>
+                </table>
+              ) : (
+                sizeResult.status
+              )}
             </div>
           </div>
         )}

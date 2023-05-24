@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useState } from "react";
-import { CartContext } from "../contexts/mycartContext";
-import ItemCart from "../components/ItemCart";
+import { CartContext } from "../../contexts/mycartContext";
+import ItemCart from "../../components/ItemCart";
 
 function MyCart() {
   const { mycart } = useContext(CartContext);
@@ -20,13 +20,13 @@ function MyCart() {
 
   return (
     <div className="flex items-start justify-center px-10 py-5 relative min-h-screen space-x-3">
-      {mycart.length === 0 && (
+      {mycart?.length === 0 && (
         <h1 className="text-3xl text-center">Your List is empty</h1>
       )}
       {/* cart list */}
       <div className="flex-col flex flex-1">
-        {mycart.map((item) => (
-          <ItemCart {...item} />
+        {mycart?.map((item) => (
+          <ItemCart {...item} key={item.itemId} />
         ))}
       </div>
 
@@ -38,7 +38,7 @@ function MyCart() {
           <h1 className="flex flex-col h-full space-between">
             <span>Total cost</span>
             <span className="text-2xl font-bold">
-              ₹{mycart.reduce((total, item) => total + item.itemPrice, 0)}/-
+              ₹{mycart?.reduce((total, item) => total + item?.itemPrice, 0)}/-
             </span>
           </h1>
           <hr className="my-2" />

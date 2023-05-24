@@ -129,17 +129,14 @@ function ProductDetailsPage({ params }) {
 
         <h1>Description</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          dolorum fuga nobis. Vitae, quia sunt dolores tenetur id nihil.
-          Veritatis, molestias similique, dolorum reprehenderit sed saepe
-          mollitia esse voluptate doloribus deleniti praesentium eveniet quae
-          atque modi, id totam cupiditate nam optio ea illo sequi aut at
-          distinctio temporibus. Eveniet, corporis fugiat animi ut ex eos
-          impedit nostrum ratione tenetur repellendus sint maiores harum
-          deserunt dolorum? Quae, amet aliquam ex ullam nulla est error sapiente
-          atque enim obcaecati doloremque voluptatum nam ab voluptas deleniti
-          harum explicabo aspernatur necessitatibus! Sint repudiandae ea impedit
-          excepturi voluptatibus dolor aspernatur fugiat esse, ad rem placeat.
+         It is a popular type of casual garment that is typically made of lightweight fabric and features short sleeves and a rounded neckline. 
+         It is one of the most versatile and widely worn clothing items across the globe. T-shirts are available in various styles, colors, patterns, and designs, catering to diverse fashion preferences.
+         The fabric used for t-shirts can vary but is commonly made from cotton or a blend of cotton with other materials like polyester or rayon. Cotton t-shirts are known for their softness, breathability, 
+         and comfort, while blended fabrics can offer added durability and stretch. The choice of fabric depends on factors such as desired comfort, durability, and performance.
+         T-shirts come in different silhouettes, including crew neck, V-neck, scoop neck, Henley, and more. They can have a loose, relaxed fit or a more fitted style, depending on personal preference and intended use.
+         T-shirts are often unisex, suitable for both men and women, but there are also gender-specific designs available.
+         T-shirts are a popular canvas for expressing personal style, interests, and affiliations. They can feature various graphics, slogans, logos, or artwork, ranging from plain solid colors to intricate designs. 
+         
         </p>
       </div>
     </div>

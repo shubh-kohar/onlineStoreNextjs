@@ -6,7 +6,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/832/832/l1grgcw0/t-shirt/x/o/5/m-t428hs-tm5p-eyebogler-original-imagdf2egzjxeqgk.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 385,
     itemdiscount: 12,
     description: "",
@@ -18,7 +18,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/w/v/p/m-hr3226-adidas-original-imaghs5kabhpthsb.jpeg?q=70",
     itemRating: 3.7,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 825,
     itemdiscount: 10,
     description: "",
@@ -30,7 +30,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/t/q/i/m-db1024-37-3bros-original-imagz8zjz7t7sqyb.jpeg?q=70",
     itemRating: 3.8,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 755,
     itemdiscount: 10,
     description: "",
@@ -42,7 +42,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/l3lx8cw0/t-shirt/4/5/n/m-84742606-puma-original-imagepyjatuga7ha.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 875,
     itemdiscount: 10,
     description: "",
@@ -54,7 +54,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/g/c/0/m-hs8144-adidas-original-imagg398fwnhfdxr.jpeg?q=70",
     itemRating: 3.5,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 1425,
     itemdiscount: 10,
     description: "",
@@ -66,7 +66,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/d/5/x/m-53558702-puma-original-imaghvg7heyhaxst.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 505,
     itemdiscount: 10,
     description: "",
@@ -78,7 +78,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/7/q/p/-original-imaggd3bpvguxfqg.jpeg?q=70",
     itemRating: 3.7,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 810,
     itemdiscount: 10,
     description: "",
@@ -90,7 +90,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/x/k/0/m-dr0998-893-nike-original-imaggb4r3krmgzc6.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 999,
     itemdiscount: 10,
     description: "",
@@ -102,7 +102,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/k7f34i80/t-shirt/b/t/g/l-10940564-roadster-original-imafpnzgz2kjytup.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 497,
     itemdiscount: 10,
     description: "",
@@ -114,7 +114,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/s/o/w/m-dv2316-435-nike-original-imaghgy6jeymwzjv.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 699,
     itemdiscount: 10,
     description: "",
@@ -126,7 +126,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/c/p/d/m-52401718-puma-original-imaghj8kdyzcv6gd.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 749,
     itemdiscount: 10,
     description: "",
@@ -138,7 +138,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/kpr8k280/t-shirt/d/p/d/m-84775903-puma-original-imag3x8hvmhezz8p.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 629,
     itemdiscount: 10,
     description: "",
@@ -150,7 +150,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/d/f/k/l-7389-the-dry-state-original-imagn5fpwbmyrgyk.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 719,
     itemdiscount: 10,
     description: "",
@@ -162,7 +162,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/y/t/k/xxs-t653-cgblwh-eyebogler-original-imaghyjv7kppbqxb.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 659,
     itemdiscount: 10,
     description: "",
@@ -174,7 +174,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/l3vxbbk0/t-shirt/q/v/e/m-12011219-fila-original-imagewn8khrbmgdc.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 825,
     itemdiscount: 10,
     description: "",
@@ -186,7 +186,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/v/i/c/l-db1024-36-3bros-original-imagz8nbtfktdffb.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 799,
     itemdiscount: 10,
     description: "",
@@ -198,7 +198,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/kg8avm80-0/t-shirt/t/y/v/m-fq8018-adidas-original-imafwgg24whjjzzg.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 459,
     itemdiscount: 10,
     description: "",
@@ -210,7 +210,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/i/w/2/m-12012134-fila-original-imaghkapyn86wj4s.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 578,
     itemdiscount: 10,
     description: "",
@@ -222,7 +222,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/1/r/n/m-gk9138-adidas-original-imagkxh9ynhjfgy6.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 899,
     itemdiscount: 10,
     description: "",
@@ -234,7 +234,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/z/7/h/m-12012074-fila-original-imaghnp8hcne97gh.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 548,
     itemdiscount: 10,
     description: "",
@@ -246,7 +246,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/klzhq4w0/t-shirt/j/4/g/m-fmts3195-flying-machine-original-imagyzj25gnrfcyz.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 799,
     itemdiscount: 10,
     description: "",
@@ -258,7 +258,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/l59xq4w0/t-shirt/4/z/j/m-pt20-d01-drose-alan-jones-original-imagfzzcezbdemwf.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 699,
     itemdiscount: 10,
     description: "",
@@ -270,7 +270,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/3/8/p/xl-db1051-3bros-original-imagzjdm87zcck2d.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 439,
     itemdiscount: 10,
     description: "",
@@ -282,7 +282,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/832/832/l0r1j0w0/t-shirt/v/t/e/3xl-c-4season-225afp-classic-polo-original-imagcgqw2nhg9qab.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 679,
     itemdiscount: 10,
     description: "",
@@ -294,7 +294,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/l0mr7gw0/t-shirt/9/i/v/5xl-toza-aqua-mel-sf-p-classic-polo-original-imagcdhgskuszfsc.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 849,
     itemdiscount: 10,
     description: "",
@@ -306,7 +306,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/t/e/n/s-askporgfv50207-allen-solly-original-imafkzsjpc8mhjhu-bb.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 659,
     itemdiscount: 10,
     description: "",
@@ -318,7 +318,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/i/t/t/s-hlts002616-highlander-original-imagz4pezbyyazvh.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 459,
     itemdiscount: 10,
     description: "",
@@ -330,7 +330,7 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/r/y/2/xl-t674-ebmnbwh-eyebogler-original-imagz8n8wgmhfmys.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 879,
     itemdiscount: 10,
     description: "",
@@ -342,8 +342,20 @@ export const clothing = [
     itemImage:
       "https://rukminim1.flixcart.com/image/612/612/k1118cw0/t-shirt/h/p/z/xl-askporgfp82490-allen-solly-original-imafkztf2tt2uucx.jpeg?q=70",
     itemRating: 3.4,
-    itemSize: ["sm", "md", "lr", "xl"],
+    itemSize: ["S", "M", "L", "XL"],
     itemPrice: 499,
+    itemdiscount: 10,
+    description: "",
+  },
+  {
+    //ITEM 6:5
+    itemId: "ioonnbhhggvvffdcx",
+    itemName: "CK Black T-Shirt",
+    itemImage:
+      "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/u/z/s/-original-imaghmuawm2sh6we.jpeg?q=70",
+    itemRating: 3.4,
+    itemSize: ["S", "M", "L", "XL"],
+    itemPrice: 859,
     itemdiscount: 10,
     description: "",
   },
